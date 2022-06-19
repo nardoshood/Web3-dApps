@@ -9,6 +9,7 @@ const Signup = () => {
 		lastName: "",
 		email: "",
 		password: "",
+		role:"staff"
 	});
 	const [error, setError] = useState("");
 	const navigate = useNavigate();
@@ -20,7 +21,7 @@ const Signup = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:8000/api/users";
+			const url = "http://localhost:8080/api/user";
 			const { data: res } = await axios.post(url, data);
 			navigate("/login");
 			console.log(res.message);
@@ -42,7 +43,7 @@ const Signup = () => {
 					<h1>10x Certificate page</h1>
 					<Link to="/login">
 						<button type="button" className={styles.white_btn}>
-							Sing in
+							Sign in
 						</button>
 					</Link>
 				</div>
@@ -85,9 +86,15 @@ const Signup = () => {
 							required
 							className={styles.input}
 						/>
+						<select name="role" className={styles.selector} onChange={handleChange}>
+							<optgroup label="Sign up as">
+  							<option value="staff">Staff</option>
+						  	<option value="trainnee">Trainnee</option>
+	 						</optgroup>
+						</select>
 						{error && <div className={styles.error_msg}>{error}</div>}
 						<button type="submit" className={styles.green_btn}>
-							Sing Up
+							Sign Up
 						</button>
 					</form>
 				</div>

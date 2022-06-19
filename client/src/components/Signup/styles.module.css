@@ -97,3 +97,13 @@
 	color: white;
 	margin: 10px;
 }
+.selector {
+	outline: none;
+	border: none;
+	width: 370px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #edf5f3;
+	margin: 5px 0;
+	font-size: 14px;
+}
