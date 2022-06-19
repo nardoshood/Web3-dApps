@@ -14,9 +14,6 @@ try{
     const hashPassword =await bcrypt.hash(req.body.password, salt)
     await new User({...req.body,passowrd:hashPassword}).save();
     res.status(201).send({message:"User created Successfuly"})
-
-
-
 }catch(error){
     res.status(500).send({message: "Internal Server error"})
 }

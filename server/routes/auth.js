@@ -26,6 +26,9 @@ router.post("/", async(req,res)=>{
 
     }
 })
+router.post("/accounts",(req,res)=>{
+    res.send({data:token, message:""})
+})
 const validate = (data)=>{
     const schema = Joi.object({
         email:Joi.string().email().required().label("Email"),
