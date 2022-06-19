@@ -26,15 +26,12 @@ const createAccount =  function (){
         console.log("err", err);
     }
 };
-// Account Address = BY2YIFMGUYFG2GSNMSJK3OBVAPX4OEUPTCVVCJNR5AZCLQAZRDF42VGO64
-// Account Mnemonic = business goose orchard wife empower word fringe else buffalo siege shoot town essay sure pattern husband giraffe stage language bulb noble capital inform abstract course
-
-async function firstTransaction() {
-
-    try {
-        let myAccount = createAccount();
-        console.log("Press any key when the account is funded");
-        await keypress();
+// Account Address = CCVK4LZMJS4I74WGTHKRTBYPXRIJAQAQECAQ43VYGRHJDYNJLUEAS7GZOY
+// Account Mnemonic = dose column drift strike solution club arrest surface small early ladder wire awful define silent thumb tube warm siege receive world wire stay abstract labelasync function firstTransaction() {
+    async function firstTransaction() {    try {  
+        // let myAccount = createAccount();
+        // console.log("Press any key when the account is funded");
+        // await keypress();
         // Connect your client
         const algodToken = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
         const algodServer = 'http://localhost';
@@ -92,4 +89,4 @@ async function firstTransaction() {
     process.exit();
 };
 
-firstTransaction();
+firstTransaction("vA/BnoZyAw1Xmms+RusrtzFHyT/IbsIYl43kJMmsX/IP0VSf8MV8NsaDZISrbtJJNicg7uZWo5ZR0xn8lKjKze==","HZ57J3K46JIJXILONBBZOHX6BKPXEM2VVXNRFSUED6DKFD5ZD24PMJ3MVA");
