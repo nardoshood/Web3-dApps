@@ -3,12 +3,13 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import styles from "./styles.module.css";
-
+import { FileUpload } from 'react-ipfs-uploader';
 const Main = () => {
   const [user, setUser] = useState({
     name: "Nardos",
-    role: "Trainee",
+    role: "Staff",
   });
+  const [fileUrl, setFileUrl] = useState('')
 
   const [data, setData] = useState({ publicKey: "" });
   const [ setError] = useState("");
@@ -223,6 +224,16 @@ const Main = () => {
                       >
                         Decline
                       </button>
+                      <div>
+                      <FileUpload setUrl={setFileUrl} />
+                          FileUrl : <a
+                      href={fileUrl}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                          >
+                {fileUrl}
+            </a>
+        </div>
                     </div>
 
                     {trainneCertificates.map((cert) => {

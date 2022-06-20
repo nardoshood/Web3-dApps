@@ -5,15 +5,16 @@ import Login from "./components/Login";
 import Cert from "./components/cert"
 
 function App() {
-	const user = localStorage.getItem("token");
+	// const user = localStorage.getItem("token");
 
 	return (
 		<Routes>
-			{user && <Route path="/" exact element={<Main />} />}	
+			{<Route path="/" exact element={<Main />} />}	
 			<Route path="/signup" exact element={<Signup />} />
 			<Route path="/login" exact element={<Login />} />
 			<Route path="/cert" exact element={<Cert/>}/>
 			<Route path="/" element={<Navigate replace to="/login" />} />
+			
 			
 		</Routes>
 	);
