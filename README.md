@@ -12,8 +12,11 @@ ownership over their content, data, and assets via blockchains.
 
 
 # Installation
+
     git clone git@github.com:nardoshood/Web3-dApps.git
+    cd client
     yarn install 
     yarn start
- # Contributor
+
+# Contributor
  ![Contributor list](https://contrib.rocks/image?repo=nardoshood/Web3-dApps)
