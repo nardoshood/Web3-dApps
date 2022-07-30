@@ -1,7 +1,7 @@
 # Web3-dApps
 
 # Introduction
-![Algorand](./Images/algorand.png)
+![Algorand](./Images/Algorand%20-%20Gold%20_%20None.jpeg)
 - Web3 is a new era of the internet that is currently emerging thanks to the
 power of blockchain technology which will help to solve many of the problems
 that arose during Web1 and Web2. It is known for its decentralized platforms. user owned data, digital money, and interoperablity.
